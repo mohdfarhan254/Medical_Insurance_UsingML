@@ -1,6 +1,13 @@
 flask
 numpy
 scikit-learn
+shap
 xgboost
 flask-cors
 flask_sqlalchemy
+pandas
+seaborn 
+matplotlib
+firebase-admin
+flask-mail
+

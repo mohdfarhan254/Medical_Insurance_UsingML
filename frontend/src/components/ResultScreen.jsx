@@ -48,8 +48,11 @@ const ResultScreen = () => {
             <BarChart data={contributors}>
               <XAxis dataKey="feature" />
               <YAxis />
-              <Tooltip formatter={(v) => `₹${v.toFixed(2)}`} />
-              <Bar dataKey="contribution" fill="#8884d8" />
+              <Tooltip formatter={(v) => `₹${v.toFixed(2)}`} />{/* This line ensures that the chart 
+              tooltip shows values nicely formatted with ₹ and two decimal places, like currency. */}
+
+              <Bar dataKey="contribution" fill="#8884d8" />{/*This line draws bars using the contribution value from each data object, and fills them with purple. 
+              It's how Recharts knows what values to visualize on your bar chart. */}
             </BarChart>
           </ResponsiveContainer>
         </div>

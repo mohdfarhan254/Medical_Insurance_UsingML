@@ -26,7 +26,7 @@ const PredictForm = ({ user }) => {
     try {
       const token = await user.getIdToken();
 
-      const res = await axios.post('http://localhost:5000/predict', {
+      const res = await axios.post('http://127.0.0.1:5000/predict', {
         age: parseInt(form.age),
         sex: parseInt(form.sex),
         bmi: parseFloat(form.bmi),
